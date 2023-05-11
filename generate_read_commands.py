@@ -34,7 +34,7 @@ def generate_assoc_rget_query():
 def generate_obj_get_query():
     id1 = random.randint(0, 499)
     obj_type = random.choice(["USER", "POST"])
-    return f"OBJ GET {id1} {obj_type};"
+    return f"OBJ GET {id1};"
 
 def generate_random_query():
     query_type = random.choices(
