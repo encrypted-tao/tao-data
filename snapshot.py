@@ -10,9 +10,9 @@ conn = psycopg2.connect(
 )
 
 with conn.cursor() as cur:
-    cur.execute('SELECT id, otype, data FROM Obj_test')
+    cur.execute('SELECT id, otype, data FROM Obj_decrypt')
     objects_query = cur.fetchall()
-    cur.execute('SELECT id1, id2, atype FROM Assoc_test')
+    cur.execute('SELECT id1, id2, atype FROM Assoc_decrypt')
     associations_query = cur.fetchall()
 
 G = nx.DiGraph()
