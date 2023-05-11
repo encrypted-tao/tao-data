@@ -20,7 +20,7 @@ def generate_assoc_range_query():
     assoc_type = random.choice(association_types)
     time_lo = random.randint(0, 500)
     time_hi = random.randint(501, 1000)
-    lim = random.randint(1, 100)
+    lim = 10
     return f"ASSOC RANGE {id1} {assoc_type} {time_lo} {time_hi} {lim};"
 
 def generate_assoc_rget_query():
